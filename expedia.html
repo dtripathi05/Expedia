@@ -1,0 +1,177 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="Expedia.css">
+	<link rel="stylesheet" href="jquery.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<meta charset="utf-8">
+	<meta name="viewport" content ="width=device-width,initial-scale=1.0">
+	
+	<title>Expedia</title>
+</head>
+<header>
+	<section class = "container">
+		<a href="Expedia.html" class ="inner-container c1">
+			<img id="logo" src ="logo.svg">
+		</a>
+		<nav class="inner-container c2">
+					<div id="accountMenu">			
+					<a href="#account" class="menu"><b>Account</b></a>
+					</div>
+					 
+						<ul class ="Menu1" id="account">
+							<li><button>SignIn</button></li>
+							<li><button>Create Account</button></li>
+						</ul>
+									
+				
+				<div><a href="#" class="menu"><b>My List</b></a></div>
+					
+				
+				<div id="tripMenu"><a href="#trip" class="menu"><b>Manage Trips</b></a></div>
+					<ul class ="Menu1" id="trip">
+						<li>One</li>
+						<li>Two</li>
+						<li>Three</li>
+						<li>Four</li>
+					</ul>
+			
+				<div id="supportMenu"><a href="#support" class="menu"><b>Support</b></a></div>
+					
+					<ul class ="Menu1" id="support">
+						<li>Customer FeedBack</li>
+						<li>FeedBack</li>
+					</ul>
+				
+		</nav>
+	</section>	
+	<nav >
+		<ul class="inner-container c3">
+			<h3><li><a href="#tabflights" id="flightTab">Flights</a></li></h3>
+			<h3><li><a href="#tabhotels" id="hotelTab">Hotels</a></li></h3>
+			<h3><li><a href="#">Car Rental</a></li></h3>
+			<h3><li><a href="#">Holiday Activities</a></li></h3>
+			<h3><li><a href="#">Discover</a></li></h3>
+		</ul>
+	</nav>
+</header>		
+<body>	
+	<section id="form">
+		<div id="form-font">
+			<nav class = "inner-container c4">
+				<a href="#tabflights" id="flightButton"><i class="fa fa-plane" aria-hidden="true"><h2>Flights</h2></i></a>
+				<a href="#tabhotels" id="hotelButton"><i class="fa fa-hospital-o" aria-hidden="true"><h2>Hotels</h2></i></a>
+			</nav>
+		</div>
+	<div id="tabflights">
+  <ul>
+    <li><a href="#tabs-1">One-Way</a></li>
+    <li><a href="#tabs-2">Two-Way</a></li>
+  </ul>
+  <div id="tabs-1">
+    <form>
+   	 <label><b>Flying from</b></label>
+    <input type="text" id="from" placeholder="City or Airport" name="from" required >
+    <label><b>Flying To</b></label>
+    <input type="text" id="to" placeholder="City or Airport" name="to" required >
+    <p>Departing: <input type="text" class="datepicker" placeholder="mm/dd/yyyy" required></p>
+    <label for="number">Adults 18+</label>
+    <select name="number" id="adult">
+      <option selected="selected">1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+      <option>6</option>      
+    </select>
+
+    
+     <label for="number">Children</label>
+     <select name="number" id="child1" class="children">
+      <option selected="selected">0</option>
+      <option >1</option>
+      <option >2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+      <option>6</option>    
+    </select>
+    <div id="addChild1" style="border: 1px solid black"></div>
+    </form>
+  </div>
+  <div id="tabs-2">
+    <form>
+   	 <label for="tags"><b>Flying from :</b></label>
+    <input type="text" placeholder="City or Airport" name="from" required id="from1">
+     <label for="tags"><b>Flying To :</b></label>
+    <input type="text" placeholder="City or Airport" name="to" required id="to1">
+    <p>Departing: <input type="text" class="datepicker" placeholder="mm/dd/yyyy" required></p>
+     <p>Returning: <input type="text" class="datepicker" placeholder="mm/dd/yyyy" required></p>
+     <label for="number">Adults 18+</label>
+    <select name="number" id="adult">
+      <option selected="selected">1</option>
+      <option >2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+      <option>6</option>      
+    </select>
+     <label for="number">Children</label>
+    <select name="number" id="child2" class="children">
+      <option selected="selected">0</option>
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+      <option>6</option>    
+    </select>
+    <div id="addChild2" style="border: 1px solid black"></div>
+    </form>
+  </div> 
+</div>
+</section>
+<div id="tabhotels">
+<form>
+	<p><label for="tags"><b>Going To: </b></label></p>
+   <input  placeholder="City or Airport"  id="tags" required>
+   <p><b>Check in: </b><input type="text" class="datepicker" placeholder="mm/dd/yyyy" required></p>
+   <p><b>Check out: </b><input type="text" class="datepicker" placeholder="mm/dd/yyyy" required></p>
+ <label for="number">Room</label>
+    <select name="number" id="rooms">
+      <option selected="selected">1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+      <option>6</option>    
+    </select>
+    <div id="inner" style="border: 1px solid black">
+    <div><label for="room">Room-1</label></br></div>
+  <label for="number">Adults 18+</label>
+    <select name="number" id="adult3">
+ <option selected="selected">1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+      <option>6</option>      
+    </select>  
+   <label for="number">Children</label>
+    <select name="number" id="child3">
+      <option selected="selected">0</option>
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+      <option>6</option>    
+    </select>   
+  <div id="addElement" style="border: 1px solid black"></div>
+    </div>
+</form>
+</div>
+</body>
+<script type="text/javascript" src="jquery.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" src="expedia.js"></script>
+</html>
